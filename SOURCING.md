@@ -1,6 +1,6 @@
 # Parts and budget draft
 
-Checked 16 November 2026 for UK delivery. Candidate parts only. Not a completed funding BOM; no order placed.
+Checked 16 November 2026 for UK delivery. **BOM.csv is a USD planning draft, not an approved $30 basket.** Some delivery charges and compatibility checks remain outstanding. No order placed.
 
 | Ref | Candidate / supplier | Buy qty | Unit GBP | Total GBP | Check |
 |---|---|---:|---:|---:|---|
@@ -20,16 +20,29 @@ Listed-price subtotal: **GBP 15.65**, excluding OLED VAT and any MPU6050 variant
 - [Bitsbox UK delivery](https://bitsboxuk.com/?main_page=shippinginfo): Royal Mail 48 GBP 2.50; confirm at checkout.
 - [Hobby Components delivery](https://hobbycomponents.com/content/1-delivery): price requires checkout quote.
 - Keyboard Company delivery: not yet quoted.
-- [JLCPCB advertises a USD 2 base option for five two-layer boards up to 100 x 100mm](https://jlcpcb.com/help/article/how-do-i-place-an-order). Our outline is 70 x 75mm. This is NOT a quotation for this order.
-- [PCB shipping depends on weight, destination and service](https://jlcpcb.com/help/article/how-much-does-shipping-cost). PCB tax and shipping are not yet quoted.
+- [JLCPCB size-based calculator](https://cart.jlcpcb.com/quote): five 70 × 75 mm two-layer FR-4 boards, 1.6 mm, green, showed **USD 4.00 web price**. It separately advertised a USD 2.00 desktop-app price, which is not used in BOM.csv. Gerbers were not uploaded, so this remains a size-based estimate, not an audited order quote.
+- UK shipping calculator showed **Global Standard Direct Line USD 5.44**, estimated 8–12 business days, for an estimated 0.21 kg. Final shipping/tax still depends on checkout and actual order review. [Screenshot of the UK delivery options](images/JLCPCB_UK_Shipping_Estimate.png).
 
-## Budget result
+## Current USD planning draft
 
-[Wise historical rate for 16 November 2026](https://wise.com/us/currency-converter/gbp-to-usd-rate/history/16-11-2026) showed approximately GBP 1 = USD 1.322. Planning conversion only; card rate/fees may differ.
+[Wise historical rate for 16 November 2026](https://wise.com/us/currency-converter/gbp-to-usd-rate/history/16-11-2026) showed approximately GBP 1 = USD 1.322. This planning rate converts the listed GBP prices to USD; it is not a guaranteed card rate. Each unit price is rounded to cents before multiplying by purchase quantity.
 
-Parts GBP 15.65 + two known shipping charges GBP 6.30 = GBP 21.95. At the planning rate this is USD 29.02; adding only the advertised USD 2 PCB base option gives **USD 31.02**.
+The OLED's listed GBP 3.33 excludes VAT. Its draft USD price includes a planning allowance of 20% UK VAT, using [the published standard rate](https://www.gov.uk/vat-rates). Confirm the actual checkout tax. Do not add that same OLED VAT again to the shipping/tax field.
 
-This already exceeds the dashboard's **USD 30 Tier 1 budget**, BEFORE OLED VAT, two other suppliers' postage, PCB postage/tax, any variant premium, a USB data cable if needed, or exchange fees. This supplier combination is not ready to submit as a USD 30 order.
+| Draft cost | USD |
+|---|---:|
+| Components at rounded USD unit prices | $21.57 |
+| Five-board PCB batch, size-based web estimate | $4.00 |
+| Pi Hut published delivery, converted | $5.02 |
+| Bitsbox published delivery, converted | $3.31 |
+| JLCPCB UK economy delivery estimate | $5.44 |
+| **Known planning total** | **$39.34** |
+| Dashboard Tier 1 funding | $30.00 |
+| **Already above the limit** | **$9.34** |
+
+**Additional costs still missing:** Hobby Components delivery, Keyboard Company delivery, any final PCB tax/adjustment and any MPU6050 variant premium. A data cable and optional keycaps are not included. The actual total will be higher unless suppliers, quantities or delivery arrangements change.
+
+BOM.csv now contains eight part/batch rows and a USD 13.77 partial shipping estimate. The funding dashboard needs **Import from repo** to load these rows; editing README alone does not populate it. This list is a transparent draft for revising the budget, not a finished funding request. It must not be submitted as a $30 order.
 
 ## Finish before submitting
 

@@ -1,2 +1,10 @@
 Item,Qty,Supplier,Cost/item,Total Cost,link
-Estimated total shipping,1,,,$0.00,
+Seeed XIAO ESP32-C3 (loose headers),1,The Pi Hut,$7.14,$7.14,https://thepihut.com/products/seeed-xiao-esp32c3
+SSD1306 OLED HCMODU0164 (UK VAT planning estimate),1,Hobby Components,$5.28,$5.28,https://hobbycomponents.com/displays/1160-096-i2c-iic-oled-module
+GY-521 MPU6050 ST071 (starting-price estimate; variant pending),1,Bitsbox,$4.32,$4.32,https://www.bitsboxuk.com/index.php?main_page=product_info&products_id=3059
+DHT11 ST092 bare four-pin sensor,1,Bitsbox,$2.45,$2.45,https://www.bitsboxuk.com/index.php?main_page=product_info&products_id=3679
+CHERRY MX1A-G1NW PCB-mount switch,2,The Keyboard Company,$0.63,$1.26,https://www.keyboardco.com/product/cherry-key-switch-module-brown-tactile-pcb-mount.asp
+10k axial resistor MR2510K (minimum purchase 10; fit one),10,Bitsbox,$0.08,$0.80,https://www.bitsboxuk.com/index.php?cPath=83_88&main_page=product_info&products_id=594
+40-way 2.54mm header strip CN344,1,Bitsbox,$0.32,$0.32,https://www.bitsboxuk.com/index.php?cPath=225_230&main_page=product_info&products_id=2409
+Custom 70x75mm PCB (one batch of 5; size-based estimate),1,JLCPCB,$4.00,$4.00,https://cart.jlcpcb.com/quote
+Estimated total shipping,1,,,$13.77,

@@ -53,7 +53,7 @@ These are candidate parts and listed prices from the sourcing comparison, not a 
 | Headers | CN344 40-way 2.54 mm header strip | 1 strip | £0.24 | [Bitsbox](https://www.bitsboxuk.com/index.php?cPath=225_230&main_page=product_info&products_id=2409) |
 | PCB | Custom two-layer 70 × 75 mm board | Manufacturer's minimum batch | Quote required | [JLCPCB quotation](https://jlcpcb.com/) |
 
-The listed component subtotal is **£15.65**, excluding OLED VAT, PCB fabrication and all delivery charges. The initial UK supplier combination exceeds the dashboard's **$30 budget** once known postage and the advertised PCB base option are included; other charges remain unquoted. See [SOURCING.md](SOURCING.md) for the assumptions, supplier checks and outstanding costs. The dashboard-synced [BOM.csv](BOM.csv) currently contains only a shipping placeholder and still needs the actual parts and costs. Tools are handled separately by the programme's shop.
+The listed GBP component subtotal is **£15.65**, excluding OLED VAT, PCB fabrication and delivery. The [BOM.csv](BOM.csv) now contains a **USD planning draft**: $25.57 for parts and the PCB batch, plus $13.77 in known/estimated delivery, for **$39.34 before two other supplier delivery charges and remaining adjustments**. This exceeds the dashboard's $30 Tier 1 limit and is not ready for funding submission. The OLED's USD estimate includes a 20% UK VAT allowance; do not count it twice. See [SOURCING.md](SOURCING.md) for the conversion, PCB calculator evidence and missing costs. Use **Import from repo** on the dashboard to load the draft rows. Tools are handled separately by the programme's shop.
 
 ## Imported component models
 
