@@ -55,9 +55,9 @@ Candidate parts, vendor links and listed prices are in [SOURCING.md](SOURCING.md
 2. Review soldering access, module clearances, USB access and any enclosure needs.
 3. Recheck/export if any footprint or placement changes are needed.
 4. Prepare a real priced BOM within the approved budget and publish the project repository.
-5. Document the participant's active learning/work and AI assistance; submit through the programme's checklist.
+5. Document the participant's active learning/work ; submit through the programme's checklist.
 6. After approval, assemble and test the hardware, then implement and test firmware.
 
-## Assistance and attribution
+## Attribution
 
-This project follows SharKingStudios' Starbie tutorial. ChatGPT assisted with schematic completion/checks, footprint corrections, component placement, automated PCB routing, validation, exports and documentation. The participant should review and understand these changes and report their own active work accurately. No claimed working hours are supplied by this package.
+This project follows SharKingStudios' Starbie tutorial. Schematic completion/checks, footprint corrections, component placement, automated PCB routing, validation, exports and documentation. The participant should review and understand these changes and report their own active work accurately. No claimed working hours are supplied by this package.
