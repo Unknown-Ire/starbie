@@ -22,6 +22,10 @@ Extract the entire folder and open `Starbie.kicad_pro` in KiCad 10. Keep the `We
 
 Red tracks are front copper; blue tracks are back copper. Vias are plated holes connecting the two sides. No ground pour has been added; ground is connected using tracks.
 
+The schematic below shows how the controller, buttons, display and sensors connect.
+
+![Starbie circuit schematic](images/Starbie_Schematic.png)
+
 ## Connections for eventual firmware
 
 | Function | XIAO label | ESP32-C3 GPIO |
@@ -34,20 +38,26 @@ Red tracks are front copper; blue tracks are back copper. Vias are plated holes 
 
 The I²C assignment is deliberately explicit: eventual firmware should initialize SDA on GPIO7 and SCL on GPIO6. Both buttons connect to GND when pressed and require the corresponding input pull-ups in firmware. MPU6050 AD0 is tied to GND; check address 0x68 when testing. R1 is a 10 kΩ pull-up from DHT_DATA to 3V3. Power is intended through the XIAO's USB connector; VBAT and VBUS pads are not connected on this carrier board.
 
-## Parts to source and price
+## Draft bill of materials
 
-| Reference | Part | Quantity / purchase note |
-|---|---|---|
-| PCB | Custom 2-layer 70 × 75 mm PCB | Manufacturer's minimum quantity; include shipping and tax |
-| U1 | Seeed Studio XIAO ESP32-C3 | 1, matching bundled SMD footprint |
-| SW1, SW2 | Cherry MX-compatible PCB-mount pushbuttons | 2, matching the 5-pin footprint |
-| J1 | SSD1306 I²C OLED module | 1, pin order GND / VDD / SCL / SDA; verify mounting dimensions |
-| J2 | GY-521 / MPU6050 module | 1, matching 8-pin connector footprint |
-| U2 | Bare 4-pin DHT11 | 1; verify supply specification and pinout of the selected part |
-| R1 | 10 kΩ axial resistor | 1, 7.62 mm lead spacing |
-| Connectors | Module headers / sockets | As required for chosen mounting approach |
+These are candidate parts and listed prices from the sourcing comparison, not a completed funding budget. Prices below are in **GBP**, as listed by the suppliers. The dashboard requires the final purchase prices in **USD**, including tax and delivery.
 
-Candidate parts, vendor links and listed prices are in [SOURCING.md](SOURCING.md). The initial UK supplier combination exceeds the dashboard's $30 budget before all delivery charges and tax. The funding BOM and hardware compatibility checks remain unfinished. Tools are handled separately by the programme's shop.
+| Reference | Part | Quantity to buy | Unit price (GBP) | Buying link |
+|---|---|---:|---|---|
+| U1 | Seeed XIAO ESP32-C3, board with loose headers | 1 | £5.40 | [The Pi Hut](https://thepihut.com/products/seeed-xiao-esp32c3) |
+| J1 | HCMODU0164 SSD1306 0.96-inch I²C OLED | 1 | £3.33 excluding VAT | [Hobby Components](https://hobbycomponents.com/displays/1160-096-i2c-iic-oled-module) |
+| J2 | ST071 GY-521 / MPU6050 module | 1 | From £3.27; confirm variant | [Bitsbox](https://www.bitsboxuk.com/index.php?main_page=product_info&products_id=3059) |
+| U2 | ST092 bare four-pin DHT11 | 1 | £1.85 | [Bitsbox](https://www.bitsboxuk.com/index.php?main_page=product_info&products_id=3679) |
+| SW1, SW2 | CHERRY MX1A-G1NW PCB-mount brown switch | 2 | £0.48 | [Keyboard Company](https://www.keyboardco.com/product/cherry-key-switch-module-brown-tactile-pcb-mount.asp) |
+| R1 | MR2510K 10 kΩ axial resistor | 10 minimum; fit one | £0.06 | [Bitsbox](https://www.bitsboxuk.com/index.php?cPath=83_88&main_page=product_info&products_id=594) |
+| Headers | CN344 40-way 2.54 mm header strip | 1 strip | £0.24 | [Bitsbox](https://www.bitsboxuk.com/index.php?cPath=225_230&main_page=product_info&products_id=2409) |
+| PCB | Custom two-layer 70 × 75 mm board | Manufacturer's minimum batch | Quote required | [JLCPCB quotation](https://jlcpcb.com/) |
+
+The listed component subtotal is **£15.65**, excluding OLED VAT, PCB fabrication and all delivery charges. The initial UK supplier combination exceeds the dashboard's **$30 budget** once known postage and the advertised PCB base option are included; other charges remain unquoted. See [SOURCING.md](SOURCING.md) for the assumptions, supplier checks and outstanding costs. The dashboard-synced [BOM.csv](BOM.csv) currently contains only a shipping placeholder and still needs the actual parts and costs. Tools are handled separately by the programme's shop.
+
+## Imported component models
+
+The bundled STEP files are reference models of purchased components from the tutorial care package. They are not a custom enclosure designed for this project. The editable PCB and schematic sources are the included KiCad files. No original Fusion or Onshape enclosure model is claimed here.
 
 ## Remaining work
 
