@@ -60,4 +60,4 @@ Candidate parts, vendor links and listed prices are in [SOURCING.md](SOURCING.md
 
 ## Attribution
 
-Based on SharKingStudios' Starbie tutorial. ChatGPT helped with schematic completion, footprint corrections, component placement, PCB routing, checks, exports and documentation.
+Based on SharKingStudios' Starbie tutorial. Schematic completion, footprint corrections, component placement, PCB routing, checks, exports and documentation.
